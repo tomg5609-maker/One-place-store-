@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Place Store</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;color:#222;background:#fff}
+header{background:#111;color:white;padding:22px;font-size:24px;font-weight:bold}
+header span{color:#e6ae35}
+.hero{background:#191919;color:white;padding:45px 22px}
+.hero h1{font-size:36px}
+button{background:#e6ae35;border:0;padding:12px 20px;border-radius:6px;font-weight:bold}
+main{padding:22px}
+.categories,.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{border:1px solid #ddd;border-radius:10px;padding:15px;text-align:center}
+.emoji{font-size:42px}
+.price{font-weight:bold;color:#9b6a08}
+footer{background:#111;color:white;text-align:center;padding:25px}
+</style>
+</head>
+<body>
+<header>One Place <span>Store</span></header>
+<section class="hero">
+<p>WELCOME TO ONE PLACE STORE</p>
+<h1>Style. Tech. More.<br>All in one place.</h1>
+<p>Discover men's fashion and everyday products.</p>
+<button onclick="document.getElementById('products').scrollIntoView()">Explore Products</button>
+</section>
+<main>
+<h2>Shop by Category</h2>
+<div class="categories">
+<div class="card">👕<p>Men's Fashion</p></div>
+<div class="card">📱<p>Phones</p></div>
+<div class="card">💻<p>Laptops</p></div>
+<div class="card">🚗<p>Cars</p></div>
+<div class="card">⌚<p>Accessories</p></div>
+<div class="card">🏠<p>Home & Living</p></div>
+</div>
+<h2 id="products">Featured Men's Fashion</h2>
+<p>Sample products only. Confirm prices and availability with suppliers.</p>
+<div class="products">
+<div class="card"><div class="emoji">👕</div><h3>Classic T-Shirt</h3><p class="price">Price on request</p></div>
+<div class="card"><div class="emoji">👔</div><h3>Polo Shirt</h3><p class="price">Price on request</p></div>
+<div class="card"><div class="emoji">👖</div><h3>Men's Jeans</h3><p class="price">Price on request</p></div>
+<div class="card"><div class="emoji">👟</div><h3>Sneakers</h3><p class="price">Price on request</p></div>
+</div>
+<h2>Contact Us</h2>
+<p>Contact details and ordering options coming soon.</p>
+</main>
+<footer>One Place Store · Everything you need, in one place.</footer>
+</body>
+</html>
